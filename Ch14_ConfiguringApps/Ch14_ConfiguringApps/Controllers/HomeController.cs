@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Ch14_ConfiguringApps.Controllers
 {
-    public class HomeControllers : Controller
+    public class HomeController : Controller
     {
         private UptimeService uptime;
 
-        public HomeControllers(UptimeService up) => uptime = up;
+        public HomeController(UptimeService up) => uptime = up;
 
         public ViewResult Index() => View(new Dictionary<string, string>
         {

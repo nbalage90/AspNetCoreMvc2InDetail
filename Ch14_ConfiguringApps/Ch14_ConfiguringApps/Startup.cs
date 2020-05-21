@@ -17,12 +17,24 @@ namespace Ch14_ConfiguringApps
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<UptimeService>();
-            services.AddMvc(option => option.EnableEndpointRouting = false); // EnableEndpointRouting set is required because of the UseMvcWithDefaultRoute()
+            services.AddMvc(options => options.EnableEndpointRouting = false); // EnableEndpointRouting set is required because of the UseMvcWithDefaultRoute()
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseMvcWithDefaultRoute();
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseStaticFiles();
+            app.UseRouting();
+
+            //app.UseMvcWithDefaultRoute();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "", defaults: new { controller = "Home", action = "Index" });
+            });
         }
     }
 }
