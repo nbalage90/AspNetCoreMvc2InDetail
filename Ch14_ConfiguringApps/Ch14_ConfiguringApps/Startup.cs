@@ -22,19 +22,7 @@ namespace Ch14_ConfiguringApps
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseStaticFiles();
-            app.UseRouting();
-
-            //app.UseMvcWithDefaultRoute();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute("default", "", defaults: new { controller = "Home", action = "Index" });
-            });
+            app.UseMiddleware<ContentMiddleware>();
         }
     }
 }
