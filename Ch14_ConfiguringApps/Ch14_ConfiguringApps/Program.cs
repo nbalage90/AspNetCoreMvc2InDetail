@@ -23,6 +23,16 @@ namespace Ch14_ConfiguringApps
         //    return new WebHostBuilder()
         //        .UseKestrel() // configures the Kestrel
         //        .UseContentRoot(Directory.GetCurrentDirectory()) // configures the root directory of the application
+                //.ConfigureAppConfiguration((hostingContext, config) =>
+                //{
+                //    config.AddJsonFile("appsettings.json",
+                //        optional: true, reloadOnChange: true);
+                //    config.AddEnvironmentVariables();
+                //    if (args != null)
+                //    {
+                //        config.AddCommandLine(args);
+                //    }
+                //});
         //        //.ConfigureAppConfiguration((hostingcontext, config) => // prepares the configuration data for the application
         //        //{
         //        //    var env = hostingcontext.HostingEnvironment;
@@ -63,7 +73,31 @@ namespace Ch14_ConfiguringApps
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>()
+                    webBuilder
+                    .ConfigureAppConfiguration((hostingContext, config) =>
+                    {
+                        var env = hostingContext.HostingEnvironment;
+                        config.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                        config.AddEnvironmentVariables();
+                        if (args != null)
+                        {
+                            config.AddCommandLine(args);
+                        }
+                    })
+                    .ConfigureLogging((hostingContext, logging) =>
+                    {
+                        logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+                        logging.AddConsole();
+                        logging.AddDebug();
+                    })
+                    .UseIISIntegration()
+                    .UseDefaultServiceProvider((context, options) =>
+                    {
+                        options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
+                    })
+                    //.UseStartup<Startup>()
+                    .UseStartup(nameof(Ch14_ConfiguringApps))
                     .UseDefaultServiceProvider(options =>
                         options.ValidateScopes = false);
                 });
