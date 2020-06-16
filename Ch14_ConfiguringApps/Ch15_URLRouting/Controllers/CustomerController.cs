@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ch15_URLRouting.Controllers
 {
+    [Route("app/[controller]/actions/[action]/{id:weekday?}")]
     public class CustomerController : Controller
     {
         public ViewResult Index() =>
