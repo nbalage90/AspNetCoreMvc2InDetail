@@ -21,10 +21,11 @@ namespace Ch15_URLRouting.Controllers
             Result r = new Result
             {
                 Controller = nameof(HomeController),
-                Action = nameof(CustomerController)
+                Action = nameof(CustomVariable)
             };
             //r.Data["Id"] = RouteData.Values["id"];
             r.Data["Id"] = id ?? "<no value>";
+            r.Data["Url"] = Url.Action("CustomVariable", "Home", new { id = 100 });
             return View("Result", r);
         }
     }
