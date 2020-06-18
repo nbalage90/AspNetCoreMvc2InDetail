@@ -18,7 +18,11 @@ namespace Ch15_URLRouting
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<RouteOptions>(options =>
-                options.ConstraintMap.Add("weekday", typeof(WeekDayContraint)));
+            {
+                options.ConstraintMap.Add("weekday", typeof(WeekDayContraint));
+                options.LowercaseUrls = true;
+                options.AppendTrailingSlash = true;
+            });
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
@@ -29,10 +33,14 @@ namespace Ch15_URLRouting
             app.UseStaticFiles();
             app.UseMvc(routes =>
             {
-                //routes.MapRoute(
-                //    name: "NewRoute",
-                //    template: "App/Do{action}",
-                //    defaults: new { controller = "Home" });
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Home}/{action=Index}");
+
+                routes.Routes.Add(new LegacyRoute(
+                    app.ApplicationServices,
+                    "/articles/Windows_3.1_Overview.html",
+                    "/old/.NET_1.0_Class_Library"));
 
                 routes.MapRoute(
                     name: "default",
@@ -44,6 +52,11 @@ namespace Ch15_URLRouting
             });
             //app.UseMvc(routes =>
             //{
+            //  routes.MapRoute(
+            //    name: "NewRoute",
+            //    template: "App/Do{action}",
+            //    defaults: new { controller = "Home" });
+
             //    routes.MapRoute(
             //        name: "MyRoute",
             //    //  template: "{controller:regex(^H.*)=Home}/{action:regex(^Index|^About$)=Index}/{id?}");
