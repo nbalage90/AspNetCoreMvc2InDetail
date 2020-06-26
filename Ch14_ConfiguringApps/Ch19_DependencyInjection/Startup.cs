@@ -16,6 +16,8 @@ namespace Ch19_DependencyInjection
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IRepository, MemoryRepository>();
+            services.AddTransient<IModelStorage, DictionaryStorage>();
+            services.AddTransient<ProductTotalizer>();
             services.AddMvc(options => options.EnableEndpointRouting = false);
         }
 
