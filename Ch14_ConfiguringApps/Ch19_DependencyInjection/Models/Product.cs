@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ch19_DependencyInjection.Models
+namespace Ch18_DependencyInjection.Models
 {
     public class Product
     {

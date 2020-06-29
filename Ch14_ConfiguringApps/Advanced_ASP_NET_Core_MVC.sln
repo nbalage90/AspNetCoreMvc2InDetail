@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch14_ConfiguringApps", "Ch1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch15_URLRouting", "Ch15_URLRouting\Ch15_URLRouting.csproj", "{761BD227-46E1-4372-976B-8663CA1146AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch17_ControllersAndActions", "Ch17_ControllersAndActions\Ch17_ControllersAndActions.csproj", "{C9670710-58AF-46BC-AED2-A6B7CDD87663}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch17_ControllersAndActions", "Ch17_ControllersAndActions\Ch17_ControllersAndActions.csproj", "{C9670710-58AF-46BC-AED2-A6B7CDD87663}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch19_DependencyInjection", "Ch19_DependencyInjection\Ch19_DependencyInjection.csproj", "{F94D94C5-25B9-4AF8-A4F4-5FFE9115EA32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch18_DependencyInjection", "Ch19_DependencyInjection\Ch18_DependencyInjection.csproj", "{F94D94C5-25B9-4AF8-A4F4-5FFE9115EA32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch19_Filters", "Ch19_Filters\Ch19_Filters.csproj", "{D40298A3-3896-4D8F-B744-BC577A3A69D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F94D94C5-25B9-4AF8-A4F4-5FFE9115EA32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F94D94C5-25B9-4AF8-A4F4-5FFE9115EA32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F94D94C5-25B9-4AF8-A4F4-5FFE9115EA32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
