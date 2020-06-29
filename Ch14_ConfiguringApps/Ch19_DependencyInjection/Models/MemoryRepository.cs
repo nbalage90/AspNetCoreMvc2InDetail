@@ -8,6 +8,7 @@ namespace Ch19_DependencyInjection.Models
     public class MemoryRepository : IRepository
     {
         private IModelStorage storage;
+        private string guid = System.Guid.NewGuid().ToString();
 
         public MemoryRepository(IModelStorage modelStore)
         {
@@ -30,6 +31,11 @@ namespace Ch19_DependencyInjection.Models
         public void DeleteProduct(Product product)
         {
             storage.RemoveItem(product.Name);
+        }
+
+        public override string ToString()
+        {
+            return guid;
         }
     }
 }

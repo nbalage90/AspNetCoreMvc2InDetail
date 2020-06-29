@@ -13,9 +13,13 @@ namespace Ch19_DependencyInjection
 {
     public class Startup
     {
+        private IWebHostEnvironment env;
+
+        public Startup(IWebHostEnvironment hostEnv) => env = hostEnv;
+
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IRepository, MemoryRepository>();
+            services.AddSingleton<IRepository, MemoryRepository>();
             services.AddTransient<IModelStorage, DictionaryStorage>();
             services.AddTransient<ProductTotalizer>();
             services.AddMvc(options => options.EnableEndpointRouting = false);

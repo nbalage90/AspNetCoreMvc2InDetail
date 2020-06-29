@@ -20,7 +20,8 @@ namespace Ch19_DependencyInjection.Controllers
 
         public ViewResult Index()
         {
-            ViewBag.Total = totalizer.Total;
+            ViewBag.HomeController = repository.ToString();
+            ViewBag.Totalizer = totalizer.Repository.ToString();
             return View(repository.Products);
         }
     }
