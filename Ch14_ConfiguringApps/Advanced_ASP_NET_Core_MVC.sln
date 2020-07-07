@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch17_ControllersAndActions"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch18_DependencyInjection", "Ch19_DependencyInjection\Ch18_DependencyInjection.csproj", "{F94D94C5-25B9-4AF8-A4F4-5FFE9115EA32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch19_Filters", "Ch19_Filters\Ch19_Filters.csproj", "{D40298A3-3896-4D8F-B744-BC577A3A69D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch19_Filters", "Ch19_Filters\Ch19_Filters.csproj", "{D40298A3-3896-4D8F-B744-BC577A3A69D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch20_APIControllers", "Ch20_APIControllers\Ch20_APIControllers.csproj", "{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D40298A3-3896-4D8F-B744-BC577A3A69D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
