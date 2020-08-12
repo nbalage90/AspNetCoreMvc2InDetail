@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch18_DependencyInjection", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch19_Filters", "Ch19_Filters\Ch19_Filters.csproj", "{D40298A3-3896-4D8F-B744-BC577A3A69D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch20_APIControllers", "Ch20_APIControllers\Ch20_APIControllers.csproj", "{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch20_APIControllers", "Ch20_APIControllers\Ch20_APIControllers.csproj", "{6FBDC53A-6591-4480-A6E2-8B5A77A2C2D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch21_Views", "Ch21_Views\Ch21_Views.csproj", "{BF6DD9B9-B391-4613-9F32-7FE6F729411C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch21_Views", "Ch21_Views\Ch21_Views.csproj", "{BF6DD9B9-B391-4613-9F32-7FE6F729411C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch22_ViewComponents", "Ch22_ViewComponents\Ch22_ViewComponents.csproj", "{5B88569E-760F-462E-9406-393DFEB4400C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{BF6DD9B9-B391-4613-9F32-7FE6F729411C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6DD9B9-B391-4613-9F32-7FE6F729411C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6DD9B9-B391-4613-9F32-7FE6F729411C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B88569E-760F-462E-9406-393DFEB4400C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B88569E-760F-462E-9406-393DFEB4400C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B88569E-760F-462E-9406-393DFEB4400C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B88569E-760F-462E-9406-393DFEB4400C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
