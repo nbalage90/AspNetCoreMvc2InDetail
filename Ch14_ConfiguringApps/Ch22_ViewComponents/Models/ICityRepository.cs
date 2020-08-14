@@ -15,8 +15,8 @@ namespace Ch22_ViewComponents.Models
     {
         private List<City> cities = new List<City>
         {
-            new City { Name = "London", Country = "UK", Population = 85390000 },
-            new City { Name = "New York", Country = "USA", Population = 84060000 },
+            new City { Name = "London", Country = "UK", Population = 8539000 },
+            new City { Name = "New York", Country = "USA", Population = 8406000 },
             new City { Name = "San Jose", Country = "USA", Population = 998537 },
             new City { Name = "Paris", Country = "France", Population = 2244000 },
         };

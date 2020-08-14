@@ -1,5 +1,7 @@
 ﻿using Ch22_ViewComponents.Models;
+using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewComponents;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,9 +18,20 @@ namespace Ch22_ViewComponents.Components
             repository = repo;
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(bool showList)
         {
-            return Content("This is a <h3><i>string</i></h3>");
+            if (showList)
+            {
+                return View("CityList", repository.Cities);
+            }
+            else
+            {
+                return View(new CityViewModel
+                {
+                    Cities = repository.Cities.Count(),
+                    Population = repository.Cities.Sum(c => c.Population)
+                });
+            }
         }
     }
 }
