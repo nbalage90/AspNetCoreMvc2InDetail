@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch20_APIControllers", "Ch20
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch21_Views", "Ch21_Views\Ch21_Views.csproj", "{BF6DD9B9-B391-4613-9F32-7FE6F729411C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch22_ViewComponents", "Ch22_ViewComponents\Ch22_ViewComponents.csproj", "{5B88569E-760F-462E-9406-393DFEB4400C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch22_ViewComponents", "Ch22_ViewComponents\Ch22_ViewComponents.csproj", "{5B88569E-760F-462E-9406-393DFEB4400C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch23_UnderstandingTagHelpers", "Ch23_UnderstandingTagHelpers\Ch23_UnderstandingTagHelpers.csproj", "{C5C20B20-B34C-48DD-8923-C6A188F8EE17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{5B88569E-760F-462E-9406-393DFEB4400C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B88569E-760F-462E-9406-393DFEB4400C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B88569E-760F-462E-9406-393DFEB4400C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C20B20-B34C-48DD-8923-C6A188F8EE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C20B20-B34C-48DD-8923-C6A188F8EE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C20B20-B34C-48DD-8923-C6A188F8EE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C20B20-B34C-48DD-8923-C6A188F8EE17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
