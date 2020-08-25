@@ -4,9 +4,28 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    @*<environment names="development">
+        <script asp-src-include="/lib/jquery/**.min.js"
+                asp-src-exclude="**.slim.**,**.min.**"
+                asp-append-version="true"></script>
+    </environment>
+    <environment names="staging, production">
+        <script asp-src-include="/lib/jquery/**.min.js"
+                asp-src-exclude="**.slim.**"></script>
+    </environment>*@
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"
+            asp-fallback-src-include="/lib/jquery/**/*.min.js"
+            asp-fallback-src-exclude="**.slim.**"
+            asp-fallback-test="window.jQuery"></script>
+    <link rel="stylesheet" asp-href-include="/lib/bootstrap/css/bootstrap.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*"/>
 </head>
 <body class="m-1 p-1">
+    <img src="~/images/city.png" asp-append-version="true" />
+    <cache expires-sliding="@TimeSpan.FromSeconds(10)"
+           vary-by="@ViewContext.RouteData.Values["action"]">
+        @await Component.InvokeAsync("Time")
+    </cache>
     @RenderBody()
 </body>
 </html>

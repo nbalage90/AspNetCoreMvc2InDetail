@@ -15,10 +15,13 @@ namespace Ch25_UsingTheOtherBuildInTagHelpers
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseStatusCodePages();
-            app.UseDeveloperExceptionPage();
-            app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
+            app.Map("/mvcapp", appBuilder =>
+            {
+                appBuilder.UseStatusCodePages();
+                appBuilder.UseDeveloperExceptionPage();
+                appBuilder.UseStaticFiles();
+                appBuilder.UseMvcWithDefaultRoute();
+            });
         }
     }
 }
