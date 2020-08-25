@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch23_UnderstandingTagHelper
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch24_UsingTheFormTagHelpers", "Ch24_UsingTheFormTagHelpers\Ch24_UsingTheFormTagHelpers.csproj", "{CF03A29D-00C1-4D9C-8FB2-5C55553AAD8B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ch25_UsingTheOtherBuildInTagHelpers", "Ch25_UsingTheOtherBuildInTagHelpers\Ch25_UsingTheOtherBuildInTagHelpers.csproj", "{E932E5AA-5D72-478A-8234-8613A10C333C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{CF03A29D-00C1-4D9C-8FB2-5C55553AAD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF03A29D-00C1-4D9C-8FB2-5C55553AAD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF03A29D-00C1-4D9C-8FB2-5C55553AAD8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E932E5AA-5D72-478A-8234-8613A10C333C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E932E5AA-5D72-478A-8234-8613A10C333C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E932E5AA-5D72-478A-8234-8613A10C333C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E932E5AA-5D72-478A-8234-8613A10C333C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
