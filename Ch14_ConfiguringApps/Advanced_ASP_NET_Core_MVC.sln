@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch26_ModelBinding", "Ch26_M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch27_ModelValidation", "Ch27_ModelValidation\Ch27_ModelValidation.csproj", "{ECA795EC-52A0-4271-92EF-FFA5FF51E08E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ch28_30_Identity", "Ch28_30_Identity\Ch28_30_Identity.csproj", "{D615AA47-A46F-4595-98B9-A8B47E42F380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{ECA795EC-52A0-4271-92EF-FFA5FF51E08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECA795EC-52A0-4271-92EF-FFA5FF51E08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECA795EC-52A0-4271-92EF-FFA5FF51E08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D615AA47-A46F-4595-98B9-A8B47E42F380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D615AA47-A46F-4595-98B9-A8B47E42F380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D615AA47-A46F-4595-98B9-A8B47E42F380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D615AA47-A46F-4595-98B9-A8B47E42F380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
